@@ -3,222 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raytech Promos | Festa Total!</title>
+    <title>Raytech Promo Ofertas Hoje | Melhores Preços</title>
 
-     <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1268672902045620');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1268672902045620&ev=PageView&noscript=1"
+    /></noscript>
     
     <style>
-
-   
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background: #fff; /* Fundo branco para garantir clareza */
-            overflow: hidden;
+            background: #f4f7f6;
+            color: #333;
+            overflow-x: hidden;
         }
 
-        /* --- 1. BACKGROUND (BEM CLARO) --- */
         .main-wrapper {
-            /* Mantendo o fundo bem claro com branco e pouca opacidade */
-            background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('13.png');
+            background-image: linear-gradient(rgba(255, 255, 255, 0.262), rgba(255, 255, 255, 0.85)), url('13.png');
             background-size: cover;
-            background-position: center;
-            height: 100vh;
-            width: 100vw;
+            background-attachment: fixed;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 1; /* Camada base */
+            padding: 20px;
         }
 
-        /* --- 2. CHUVA DE CONFETES (CAMADA DO MEIO) --- */
-        .confetti {
-            position: absolute;
-            z-index: 2; /* Fica à frente do background, mas atrás do card */
-            top: -20px;
-            border-radius: 2px;
-            animation: fall linear forwards;
-        }
-
-        @keyframes fall {
-            to { transform: translateY(105vh) rotate(720deg); }
-        }
-
-        /* --- 3. CARD CENTRAL (FRENTE) --- */
         .glass-card {
-            /* Degradê Azul Vibrante e Ligeiramente Transparente */
-            background: linear-gradient(135deg, rgba(33, 150, 243, 0.9) 0%, rgba(13, 71, 161, 0.95) 100%);
-            backdrop-filter: blur(8px);
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.98) 0%, rgba(13, 71, 161, 1) 100%);
             padding: 40px 20px;
             border-radius: 30px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            max-width: 700px;
-            width: 90%;
-            border: 4px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            width: 100%;
             text-align: center;
             color: #fff;
-            position: relative;
-            z-index: 3; /* Fica à frente de tudo */
+            margin-top: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        h1 {
-            font-size: 3.8rem;
-            color: #ffea00; /* Amarelo Vibrante */
-            margin-bottom: 10px;
-            text-transform: uppercase;
+        .social-proof-badge {
+            background: #ffea00;
+            color: #000;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
             font-weight: 900;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
-        .subtitle { font-size: 1.3rem; margin-bottom: 30px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        h1 { font-size: 2.3rem; color: #fff; margin-bottom: 10px; line-height: 1.1; font-weight: 900; }
+        .subtitle { font-size: 1.05rem; margin-bottom: 25px; opacity: 0.95; }
 
+        .btn-whatsapp {
+            display: block;
+            background: #25d366;
+            color: white;
+            padding: 20px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 10px 0;
+            transition: 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.03); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); }
+        }
+
+        .benefits {
+            text-align: left;
+            margin: 25px 0;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .benefits li { list-style: none; margin-bottom: 10px; font-size: 0.9rem; display: flex; align-items: center; }
+        .benefits li b {
+        margin-right: 8px; /* Isso empurra o texto para a direita, criando o espaço */
+        }
+        .benefits li:before { content: '✅'; margin-right: 10px; }
+
+        .logo-header { font-size: 0.75rem; margin-top: 20px; opacity: 0.9; text-transform: uppercase; font-weight: 700; color: #fff; }
         .logo-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-bottom: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 20px;
+            margin: 10px 0 25px;
+            background: rgba(255, 255, 255, 0.1); /* Fundo sutil para destacar os logos */
+            padding: 10px;
+            border-radius: 15px;
         }
-
-        .logo-container img {
-            height: 55px;
+        /* Tamanho reduzido e cores originais */
+        .logo-container img { 
+            height: 30px; /* Altura reduzida */
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
-            animation: pulse-logo 2s infinite ease-in-out;
+            filter: none; /* Remove o filtro branco para voltar as cores reais */
         }
 
-        @keyframes pulse-logo {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+        .testimonials { width: 100%; max-width: 600px; margin-top: 35px; }
+        .testimonial-card {
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            text-align: left;
         }
+        .testimonial-card img { width: 45px; height: 45px; border-radius: 50%; margin-right: 15px; border: 2px solid #2196f3; }
+        .testimonial-text b { display: block; color: #1347a1; font-size: 0.85rem; }
+        .testimonial-text p { font-size: 0.8rem; color: #555; line-height: 1.4; }
 
-        /* =========================================
-           --- 4. BOTÃO WHATSAPP ULTRA ANIMADO --- 
-           ========================================= */
-        .btn-whatsapp {
-            display: inline-block;
-            background: #25d366; /* Verde WhatsApp */
-            color: white;
-            padding: 22px 50px;
-            font-size: 1.7rem;
-            font-weight: 900;
-            text-decoration: none;
-            border-radius: 60px;
-            position: relative;
-            overflow: visible; /* Importante para o brilho neon sair do botão */
-            
-            /* -- COMBO DE ANIMAÇÕES DO BOTÃO -- */
-            /* 1. Pulsar Neon (glow), 2. Balanço Agitado (shake) */
-            animation: 
-                whatsapp-glow 1.5s infinite alternate, /* Pulsar Neon Contínuo */
-                whatsapp-shake 3s infinite;           /* Balanço Agitado de tempos em tempos */
-                
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
-            transition: transform 0.2s;
-        }
+        .faq { width: 100%; max-width: 600px; margin-top: 30px; text-align: left; padding: 0 10px; }
+        .faq h3 { font-size: 1.1rem; margin-bottom: 15px; text-align: center; color: #1347a1; }
+        .faq-item { margin-bottom: 15px; }
+        .faq-item b { font-size: 0.85rem; color: #1347a1; }
+        .faq-item p { font-size: 0.8rem; color: #666; }
 
-        /* Efeito ao passar o mouse */
-        .btn-whatsapp:hover {
-            transform: scale(1.05); /* Aumenta ligeiramente */
-            animation-play-state: paused; /* Pausa o shake para facilitar o clique */
-            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.8);
-        }
+        footer { margin: 40px 0; font-size: 0.75rem; color: #999; text-align: center; line-height: 1.5; }
 
-        /* Estilo para o foguete dentro do botão */
-        .btn-whatsapp .rocket-emoji {
-            display: inline-block;
-            margin-right: 10px;
-            /* 3. Foguete em Movimento (decolagem) */
-            animation: rocket-launch 1s infinite ease-in-out alternate;
-        }
-
-        /* --- KEYFRAMES DAS ANIMAÇÕES --- */
-
-        /* 1. Pulsar Neon (Glow) */
-        @keyframes whatsapp-glow {
-            from { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6), 0 0 20px rgba(37, 211, 102, 0.4); }
-            to { box-shadow: 0 0 25px rgba(37, 211, 102, 1), 0 0 40px rgba(37, 211, 102, 0.7); }
-        }
-
-        /* 2. Balanço Agitado (Shake) - Acontece de tempos em tempos */
-        @keyframes whatsapp-shake {
-            0%, 90% { transform: rotate(0deg); } /* Fica parado a maior parte do tempo */
-            92% { transform: rotate(3deg); }
-            94% { transform: rotate(-3deg); }
-            96% { transform: rotate(2deg); }
-            98% { transform: rotate(-2deg); }
-            100% { transform: rotate(0deg); } /* Volta à posição inicial */
-        }
-
-        /* 3. Foguete em Decolagem (Subida e Descida sutil) */
-        @keyframes rocket-launch {
-            from { transform: translateY(0); }
-            to { transform: translateY(-8px); } /* Sobe 8px simulando decolagem */
-        }
-
-        /* Rodapé sutil */
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #ddd;
-            font-weight: 600;
-        }
-
-        /* Responsividade para Mobile */
         @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; letter-spacing: -1px; }
-            .logo-container img { height: 40px; }
-            .btn-whatsapp { font-size: 1.3rem; padding: 18px 35px; }
+            h1 { font-size: 1.8rem; }
+            .btn-whatsapp { font-size: 1.1rem; }
+            .glass-card { padding: 30px 15px; }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
-
- <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1268672902045620');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1268672902045620&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    
 </head>
 <body>
 
-    <div class="main-wrapper" id="bg">
+    <div class="main-wrapper">
         <div class="glass-card">
-            <h1>Raytech Promos</h1>
-            <p class="subtitle">Receba as melhores ofertas do dia — até 80% OFF — direto no seu WhatsApp.</p>
+            <div class="social-proof-badge">🎯 +3.400 membros economizando</div>
+            <h1>As Melhores Ofertas no seu WhatsApp!</h1>
+            <p class="subtitle">Garanta cupons de até 80% OFF antes que acabem.</p>
 
-            <ul style="list-style: none; margin-bottom: 20px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
-                font-family: 'Poppins', sans-serif;"> 
-                <li>✨ Ofertas Exclusivas</li> 
-                <li>🔔 Alertas em Tempo Real</li> 
-                <li>💸 Cupons e Descontos</li> 
-                <li>🔇 Sem spam. Somente ofertas selecionadas</li>
-                <li>📱 Links com imagem preview — veja o produto sem encher a galeria</li></ul>
-            <p style="font-weight: bold; color: #ffea00; margin-top: 10px; font-family: 'Poppins', sans-serif;">⚠️ Corra, as vagas são limitadas! Entre agora e não fique de fora!</p>
-            
+            <a href="https://chat.whatsapp.com/G1swG9HKGsFGX9CXpdsKYP" class="btn-whatsapp" target="_blank" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp Group Join', content_type: 'group'});">
+                🚀 ENTRAR NO GRUPO AGORA!
+            </a>
+
+            <ul class="benefits">
+                <li><b>Curadoria Diária:</b> Só os melhores preços reais de hoje.</li>
+                <li><b>Zero Spam:</b> Grupo fechado, apenas ofertas selecionadas.</li>
+                <li><b>Segurança:</b> Links verificados das maiores lojas do Brasil.</li>
+                <li><b>Links com imagem preview:</b> veja o produto sem encher a galeria</li>
+            </ul>
+
+        <p class="logo-header">OFERTAS DAS MELHORES LOJAS:</p>
             <div class="logo-container">
                 <img src="Shopee_logo.svg.png" alt="Shopee">
                 <img src="mercado livre.jpg" alt="Mercado Livre">
@@ -226,37 +186,53 @@ src="https://www.facebook.com/tr?id=1268672902045620&ev=PageView&noscript=1"
                 <img src="aliexpress.png" alt="AliExpress">
                 <img src="shein.webp" alt="Shein">
             </div>
-
-            <a href="https://chat.whatsapp.com/G1swG9HKGsFGX9CXpdsKYP" class="btn-whatsapp" target="_blank" onclick="fbq('track', 'Lead', {content_name: 'WhatsApp Group Join', content_type: 'group'});">
-                <span class="rocket-emoji">🚀</span> ENTRAR NO GRUPO WHATSAPP!
-            </a>
-
-            <footer>
-                &copy; 2026 Raytech Promos - Diversão e Economia Garantidas.
-            </footer>
-        </div>
-    </div>
-
-    <script>
-        function createConfetti() {
-            const colors = ['#ffea00', '#ff5722', '#2196f3', '#4caf50', '#e91e63', '#ffffff'];
-            const confetti = document.createElement('div');
-            confetti.classList.add('confetti');
             
-            confetti.style.left = Math.random() * 100 + "vw";
-            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            confetti.style.width = Math.random() * 8 + 4 + "px";
-            confetti.style.height = Math.random() * 12 + 4 + "px";
-            confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
-            confetti.style.opacity = Math.random();
+            <small style="opacity: 0.8; font-size: 0.85rem;">⚠️ Poucas vagas restantes para este grupo</small>
+        </div>
 
-            // Adiciona o confete dentro do wrapper para ele ficar entre o BG e o Card
-            document.getElementById('bg').appendChild(confetti);
+        <!-- DEPOIMENTOS -->
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/150?u=22" alt="Membro">
+                <div class="testimonial-text">
+                    <b>Marina S. ⭐⭐⭐⭐⭐</b>
+                    <p>"Comprei minha AirFryer com 40% de desconto pelo link daqui. Valeu muito a pena!"</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/150?u=05" alt="Membro">
+                <div class="testimonial-text">
+                    <b>Ramon M. ⭐⭐⭐⭐⭐</b>
+                    <p>"Adoro que o grupo é direto ao ponto, sem conversas. Só as ofertas e cupons."</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/150?u=11" alt="Membro">
+                <div class="testimonial-text">
+                    <b>Juliana L. ⭐⭐⭐⭐⭐</b>
+                    <p>"Economizei mais de R$ 200 este mês com os cupons da Shopee e Amazon."</p>
+                </div>
+            </div>
+        </div>
 
-            setTimeout(() => { confetti.remove(); }, 5000);
-        }
-        setInterval(createConfetti, 100); // Chuva constante
-    </script>
+        <!-- FAQ -->
+        <div class="faq">
+            <h3>Dúvidas Frequentes</h3>
+            <div class="faq-item">
+                <b>É pago para participar?</b>
+                <p>Não! O grupo é 100% gratuito e focado em ajudar você a economizar.</p>
+            </div>
+            <div class="faq-item">
+                <b>Vou receber muita mensagem?</b>
+                <p>Não. Enviamos apenas o "filé" das ofertas, geralmente as melhores do dia.</p>
+            </div>
+        </div>
+
+        <footer>
+            Raytech Promo Ofertas Hoje &copy; 2026<br>
+            Todos os direitos reservados.
+        </footer>
+    </div>
 
 </body>
 </html>
